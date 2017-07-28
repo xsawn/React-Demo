@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta name="full-screen" content="yes">
+  <meta name="x5-fullscreen" content="true">
+  <title>demo</title>
+  <link rel="stylesheet" type="text/css" href="css.js">
+  <style type="text/css">
+    *{
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+      /*-webkit-overflow-scrolling: touch;*/
+
+    }
+    .body-wrapper {
+      height: 100%;
+      overflow: scroll;
+      border-bottom: 1px soslid #000;
+      /*z-index: 1;*/
+    }
+    html, body {
+      height: 100%
+    }
+    body {
+     /* overflow: scroll;
+      border-bottom: 1px solid #000;*/
+    }
+    .loading {
+      /*position: fixed;*/
+
+      top: 0;
+      left: 0;
+      width: 100%;
+      line-height: 40px; 
+      height: 40px; 
+      z-index: 1;
+      text-align: center;
+      background: red;
+    }
+    .list {
+      margin-top: 40px;
+      height: 400px;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      /*z-index: 2;*/
+    }
+    .text-area {
+      /*position: fixed;*/
+
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      line-height: 40px; 
+      height: 40px; 
+      /*z-index: 10*/
+      text-align: center;
+      background: green;
+      transform: translateZ(999px);
+    }
+    .input-name {
+      height: 30px;
+      width: 100%;
+    }
+    .dingwei {
+      position: relative;
+      border: 1px solid red;
+      height: 115px;
+      background: url(http://image.zhangxinxu.com/image/blog/201701/2017-01-25_120858.jpg);
+    }
+    .zxx {
+      position: absolute;
+    left: 100px;
+    top: 0px;
+    }
+    .leve1 {
+      display: flex;
+
+    }
+    .l1 {
+      position: relative;
+    }
+    .li img {
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+    <div class="loading">正在加载...</div>
+
+  <div class="body-wrapper" >
+    <ul class="list">
+      
+    </ul>
+
+
+  </div>
+      <div class="text-area">
+      <input class="input-name" type="text" placeholder="please..." />
+    </div>
+
+  <script type="text/javascript" src="http://qidian.gtimg.com/yuewen/v1/js/zepto.min.js"></script>
+  <script type="text/javascript" src="bundle.js"></script>
+</body>
+</html>
